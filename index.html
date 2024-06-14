@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-tab"> 
+            <img class="site-logo" src="" alt="">
+            <nav>
+                <a href="#about" class="header-text">About Us</a>
+                <a href="#portfolio" class="header-text">Practice Areas</a>
+                <a href="#contact" class="button header-text">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <section id="hero" class="hero">
+        <div class="image-header">
+            <img src="assets/images/lawOffice.png" alt="About Image">
+            <div class="header-law-text">
+                <h1>The Law Offices of Ahmed Gadalla</h1>
+                <p>Specializing in Real Estate, Medical, and Criminal Law.</p>
+                <a href="#contact" class="button">Contact</a>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="text-content">
+            <h1 class="title">About</h1>
+            <p class="sub-heading">Subheading for description or instructions</p>
+            <p class="default-text">Body text for your whole article or post. We'll put in some lorem ipsum to show how a filled-out page might look:</p>
+            <p class="default-text">Excepteur efficient emerging, minim veniam anim aute carefully curated Ginza conversation exquisite perfect nostrud nisi intricate Content. Qui international first-class nulla ut. Punctual adipiscing, essential lovely queen tempor eiusmod irure. Exclusive izakaya charming Scandinavian impeccable aute quality of life soft power pariatur Melbourne occaecat discerning. Qui wardrobe aliquip, et Porter destination Toto remarkable officia Helsinki excepteur Basset hound. Zürich sleepy perfect consectetur.</p>
+        </div>
+        <div class="image-container">
+            <img src="assets/images/image 1.png" alt="About Image">
+        </div>
+    </section>
+    <section id="portfolio" class="portfolio">
+        <h1 class="title">Practice Areas</h1>
+        <p class="sub-heading">A subheading with a brief description of you, your work, and what you're all about—no biggie</p>
+        <div class="projects">
+            <div class="project">
+                <img src="/assets/images/image 2.png" alt="Project 1">
+                <p class="project-title">Real Estate Law</p>
+                <p class="project-text gray-text ">Description of your first project</p>
+            </div>
+            <div class="project">
+                <img src="/assets/images/image 3.png" alt="Project 2">
+                <p class="project-title">Medical</p>
+                <p class="project-text gray-text ">Description of your second work</p>
+            </div>
+            <div class="project">
+                <img src="/assets/images/image 4.png" alt="Project 3">
+                <p class="project-title">Criminal</p>
+                <p class="project-text gray-text ">Description of your third creation</p>
+            </div>
+            <div class="project">
+                <img src="/assets/images/image 5.png" alt="Project 4">
+                <p class="project-title">Divorce</p>
+                <p class="project-text gray-text ">Description of your fourth endeavor</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="form-container">
+            <h1 class="title">Contact us</h1>
+            <p class="sub-heading">Subheading for description or instructions</p>
+            <form id="form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="f788f921-216f-41a4-9b32-053906dba765">
+                <div class="name-row">
+                    <div class="input-group">
+                        <label for="first-name">First name</label>
+                        <input class="first-name" type="text" name="first-name" id="first-name" placeholder="First name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="last-name">Last name</label>
+                        <input class="last-name" type="text" name="last-name" id="last-name" placeholder="Last name" required>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email address</label>
+                    <input class="email" type="email" name="email" id="email" placeholder="Email address" required>
+                </div>
+                <div class="input-group">
+                    <label for="message">Your message</label>
+                    <textarea name="message" id="message" rows="4" placeholder="Enter your question or message" required></textarea>
+                </div>
+                <button class="form-container-button" type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="image-container">
+            <img src="/assets/images/image 6.png" alt="Contact image">
+        </div>
+    </section>                 
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h2>Site name</h2>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook" style="color: #828282;"></i></a>
+                    <a href="#"><i class="fab fa-linkedin" style="color: #828282;"></i></a>
+                    <a href="#"><i class="fab fa-youtube" style="color: #828282;"></i></a>
+                    <a href="#"><i class="fab fa-instagram" style="color: #828282;"></i></a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-column">
+                    <h3>Topic</h3>
+                    <a href="#">Page</a>
+                    <a href="#">Page</a>
+                    <a href="#">Page</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Topic</h3>
+                    <a href="#">Page</a>
+                    <a href="#">Page</a>
+                    <a href="#">Page</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Topic</h3>
+                    <a href="#">Page</a>
+                    <a href="#">Page</a>
+                    <a href="#">Page</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        window.onload = function() {
+            // Reset the form fields when the page loads
+            document.getElementById("form").reset();
+        };
+    </script>
+</body>
+</html>
