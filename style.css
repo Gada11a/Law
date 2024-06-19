@@ -39,22 +39,22 @@ body {
   text-align: left;
   width: auto;
   left: 10%;
-  right: 10%;
+  right: 25%;
 }
 .image-header h1 {
   top: 30%;
   font-size: 4vw;
 }
 .image-header p {
-  top: 42%; 
-  font-size: 1.5vw;
+  top: 41%; 
+  font-size: 2.083vw;
 }
 .image-header a {
-  top: 50%; 
+  top: 55%; 
   background-color: white;
   text-decoration: none;
   color: black;
-  font-size: 18px;
+  font-size: 24px;
   padding: 0.7rem 1rem;
   width: fit-content;
   border-radius: 5px;
@@ -63,7 +63,6 @@ body {
 /* Site logo */
 .site-logo {
   height: 3.5rem;
-  width: 6rem;
   background-color: #D9D9D9;
 }
 
@@ -398,9 +397,10 @@ footer {
   .image-header p {
     top: 45%;
     font-size: 18px;
+    right: 35%;
   }
   .image-header a {
-    top: 58%;
+    top: 63%;
     font-size: unset
   }
 
@@ -460,12 +460,12 @@ footer {
   font-size: 30px;
 }
 .image-header p {
-  top: 53%;
+  top: 43%;
   font-size: 14px;
   width: 70%;
 }
 .image-header a {
-  top: 70%;
+  top: 61%;
   font-size: unset
 }
 .about, .portfolio, .contact {
@@ -543,7 +543,6 @@ footer {
 @media (max-width: 576px) {
   .site-logo{
     height: 2.5rem;
-    width: 4rem;
   }
 
   .header-tab {
@@ -553,6 +552,11 @@ footer {
   .header-text {
     font-size: 14px;
     margin: 0 2px;
+  }
+
+  .image-header a {
+    top: 60%;
+    font-size: unset
   }
 
   .about, .portfolio, .contact {
@@ -583,4 +587,24 @@ footer {
   footer {
     padding: 40px 20px !important;
   }
+}
+/* smallest phone */
+@media (max-width: 375px) {
+  .site-logo {
+    height: 2.5rem;
+    width: 6.5rem;
+  }
+.image-header h1,
+.image-header p,
+.image-header a {
+  right: 10%;
+}
+.header-text {
+  font-size: 12px;
+}
+
+.image-header a {
+  top: 62%;
+  font-size: unset;
+}
 }
